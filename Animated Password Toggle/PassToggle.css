@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}   
+
+body{
+background:#6EA5F7;
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+height:65px;   
+width:280px;
+background:#111725;
+border-radius:7px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+display:flex;
+align-items:center;
+padding:5px;
+}
+
+.container .fa-lock{
+color:white;   
+margin-left:15px;
+z-index:1;
+}
+
+.container .fa-lock.lock-change{
+color:black;  
+transition:all .2s;
+}
+
+.container .userInput{
+all:unset; 
+height:60px;
+width:185px;
+margin-left:10px;
+color:#6066D0;
+z-index:1;
+transition:all .2s;
+}
+
+.container .password-background{
+height:30px;   
+width:30px;
+background:white;
+border-radius:100%;
+position:absolute;
+right:15px;
+transition:all .2s;
+}
+
+.container .password-background.expand{
+right:0;
+height:100%;
+width:100%;
+border-radius:7px;
+}
+
+.container .fa-eye,.container .fa-eye-slash{
+color:#6066D0;      
+position:absolute;
+right:21.5px;
+z-index:1;
+font-size:15px;
+transition:all 1s;
+cursor:pointer;
+}
+
+.container .fa-eye.hide,.container .fa-eye-slash.hide{
+display:none;        
+}
